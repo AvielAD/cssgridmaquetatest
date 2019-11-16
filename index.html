@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/button-ghost.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="logo"><h3>Logo</h3></div>
+    <div class="contenedor">
+        <section class="logo-class">
+                <div><h3>Logo</h3></div>
+        </section>
+        
         <header>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -20,44 +25,73 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
-        <div class="login"><h3>Login</h3></div>
 
-        <section class="carousel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
+        <section class="login-class">
+            <div >
+                <a href="#" class="btn-ghost blue round">Login</a>
+            </div>
         </section>
-        <section class="pricing">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
-        </section>
-        <section class="features">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
+        <section class="carousel-class">
 
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides w3-animate-fading" src="img/descarga.jpg" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="img/descarga.jpg" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="img/descarga.jpg" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="img/descarga.jpg" style="width:100%">
+              </div>
         </section>
-        <section class="testimonials">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
-        </section>
-        <section class="support">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
-
-        </section>
-        <section class="parallax">
+        <section class="pricing-class">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
         </section>
-        <section class="sectionpad">
+        <section class="features-class">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
         </section>
-        <section class="footer">
+        <section class="testimonials-class">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
         </section>
-        <section class="copyright">
+        <section class="support-class">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
         </section>
+        <section class="parallax-class">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
+
+        </section>
+        <section class="sectionpad-class">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
+
+        </section>
+
+        <footer class="footer-class">
+                <p>pie de pagina</p>
+        </footer>
+
+        <footer class="copyright-class">
+            <p>copyright</p>
+        </footer>
     </div>
-    
+<script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);   
+}
+
+</script>
+ 
 </body>
 </html>
