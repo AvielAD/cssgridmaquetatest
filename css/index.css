@@ -1,6 +1,9 @@
-.container{
+.mySlides {display:none;}
+
+.contenedor{
  display: grid;
  grid-template-columns: 10% 80% 10%;
+ grid-template-rows: auto 200px;
  grid-template-areas: "logo header login"
                       "carousel carousel carousel"
                       "pricing pricing pricing"
@@ -10,65 +13,67 @@
                       "parallax parallax parallax"
                       "sectionpad sectionpad sectionpad"
                       "footer footer footer"
-                      "copyright copyright copyright";
-
+                      "copyright copyright copyright";                    
 }
 
-.container header{
+.contenedor header{
     grid-area: header;
-    background: #000000;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.container header ul li{
+.contenedor header ul li{
     display: inline-block;
     padding: .5rem;
+    margin-left: 2.5rem;
 }
-.container header ul li a{
-    display: inline-block;
+
+.contenedor header ul li a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
-.container .logo{
+.contenedor .logo-class{
     grid-area: logo;
-    background: black;
-    color: white;
+    color: black;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    text-align: center;
 }
-.container .login{
+.contenedor .login-class{
     grid-area: login;
-    background: black;
-    color: white;
+    color: black;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    text-align: center;
+
 }
-.container section{
+.contenedor section{
     margin: 0 auto;
 }
-.container .carousel{
+.contenedor .carousel-class{
     grid-area: carousel;
 }
-.container .pricing{
+.contenedor .pricing-class{
     grid-area: pricing;
 }
-.container .features{
+.contenedor .features-class{
     grid-area: features;
 }
-.container .testimonials{
+.contenedor .testimonials-class{
     grid-area: testimonials;
 }
-.container .support{
+.contenedor .support-class{
     grid-area: support;
 }
-.container .parallax{
+.contenedor .parallax-class{
     grid-area: parallax;
 }
-.container .sectionpad{
+.contenedor .sectionpad-class{
     grid-area: sectionpad;
 }
-.container .footer{
+.contenedor .footer-class{
     grid-area: footer;
 }
-.container .copyright{
+.contenedor .copyright-class{
     grid-area: copyright;
 }
