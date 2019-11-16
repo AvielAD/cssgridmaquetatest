@@ -2,7 +2,7 @@
 
 .contenedor{
  display: grid;
- grid-template-columns: 10% 80% 10%;
+ grid-template-columns: 10% 70% 20%;
  grid-template-rows: auto 200px;
  grid-template-areas: "logo header login"
                       "carousel carousel carousel"
@@ -44,10 +44,11 @@
     color: black;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    text-align: center;
-
 }
 .contenedor section{
+    margin: 0 auto;
+}
+.contenedor footer{
     margin: 0 auto;
 }
 .contenedor .carousel-class{

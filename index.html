@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/button-ghost.css">
     <title>Document</title>
 </head>
 <body>
     <div class="contenedor">
-        <div class="logo-class"><h3>Logo</h3></div>
+        <section class="logo-class">
+                <div><h3>Logo</h3></div>
+        </section>
         
         <header>
             <ul>
@@ -23,7 +26,11 @@
             </ul>
         </header>
 
-        <div class="login-class"><h3>Login</h3></div>
+        <section class="login-class">
+            <div >
+                <a href="#" class="btn-ghost blue round">Login</a>
+            </div>
+        </section>
 
         <section class="carousel-class">
 
@@ -59,17 +66,17 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
         </section>
-        <section class="footer-class">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
 
-        </section>
-        <section class="copyright-class">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit eveniet, animi possimus eaque eius commodi. Aliquam tempora quae pariatur.</p>
+        <footer class="footer-class">
+                <p>pie de pagina</p>
+        </footer>
 
-        </section>
+        <footer class="copyright-class">
+            <p>copyright</p>
+        </footer>
     </div>
-    <script>
-        var myIndex = 0;
+<script>
+    var myIndex = 0;
 carousel();
 
 function carousel() {
@@ -81,9 +88,10 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 9000);    
+  setTimeout(carousel, 9000);   
 }
-    </script>
+
+</script>
  
 </body>
 </html>
