@@ -1,0 +1,74 @@
+.container{
+ display: grid;
+ grid-template-columns: 10% 80% 10%;
+ grid-template-areas: "logo header login"
+                      "carousel carousel carousel"
+                      "pricing pricing pricing"
+                      "features features features"
+                      "testimonials testimonials testimonials"
+                      "support support support"
+                      "parallax parallax parallax"
+                      "sectionpad sectionpad sectionpad"
+                      "footer footer footer"
+                      "copyright copyright copyright";
+
+}
+
+.container header{
+    grid-area: header;
+    background: #000000;
+}
+
+.container header ul li{
+    display: inline-block;
+    padding: .5rem;
+}
+.container header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.container .logo{
+    grid-area: logo;
+    background: black;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.container .login{
+    grid-area: login;
+    background: black;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.container section{
+    margin: 0 auto;
+}
+.container .carousel{
+    grid-area: carousel;
+}
+.container .pricing{
+    grid-area: pricing;
+}
+.container .features{
+    grid-area: features;
+}
+.container .testimonials{
+    grid-area: testimonials;
+}
+.container .support{
+    grid-area: support;
+}
+.container .parallax{
+    grid-area: parallax;
+}
+.container .sectionpad{
+    grid-area: sectionpad;
+}
+.container .footer{
+    grid-area: footer;
+}
+.container .copyright{
+    grid-area: copyright;
+}
